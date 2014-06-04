@@ -29,7 +29,7 @@ If you throw this code into a file in your bin directory and run it,
 you will see that all the company names are unique:
 
 ```ruby
-require_relative 'lib/generator'
+require_relative '../lib/generator'
 require 'pp'
 
 pp Generator.new(4).generate
