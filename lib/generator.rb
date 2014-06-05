@@ -5,7 +5,6 @@ class Generator
 
   def initialize(length)
     @length = length
-    @people = people
     @companies = companies
   end
 
@@ -23,7 +22,7 @@ class Generator
 
   def generate
     i = 0
-    @people.map do |person|
+    people.map do |person|
       result = (person << @companies[i])
       i += 1
       i = 0 if i == (@length / 2)
